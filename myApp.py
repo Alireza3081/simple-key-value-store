@@ -7,7 +7,7 @@ class KeyValueStore:
         self.store = {}
         self._load()
 
-    def _load(self):
+    def _load(self): 
         if os.path.exists(self.db_path):
             with open(self.db_path, "r") as f:
                 try:
